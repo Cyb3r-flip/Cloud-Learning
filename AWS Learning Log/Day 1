@@ -1,0 +1,48 @@
+Static Website Hosting with Amazon S3 and Amazon CloudFront
+
+This project is a simple static website hosted on **Amazon S3** and distributed globally using **Amazon CloudFront**.  
+It demonstrates how CloudFront improves speed and reliability for content delivery by caching files at edge locations closer to the user.
+
+---
+
+# Learning Objectives
+- Understand how **Amazon S3** can host static website files.
+- Learn how **Amazon CloudFront** works as a Content Delivery Network (CDN).
+- Explore how S3 and CloudFront integrate to deliver content efficiently.
+
+----------------------------------------------------------------------------
+
+# What I Did
+1. **Created an S3 Bucket**
+   - Enabled static website hosting.
+   - Uploaded `cloud_front.html`.
+   - Made the file publicly accessible.
+
+2. **Set Up a CloudFront Distribution**
+   - Configured the S3 bucket as the origin.
+   - Set the **Default Root Object** to `cloud_front.html` for cleaner URLs.
+   - Deployed the distribution and tested using the domain name.
+
+3. **Tested Access**
+   - Verified the distribution domain loads the static site.
+   - Noted that without the **Default Root Object**, the file name must be appended in the URL.
+
+-----------------------------------------------------------------------------
+
+# What I Learned
+- **S3 as the Origin**
+  - Stores static files (HTML, CSS, JS, images).
+  - Requires static website hosting to serve files over HTTP.
+  - Files must have correct permissions for CloudFront access.
+
+- **CloudFront as the CDN**
+  - Distributes content from global edge locations.
+  - Caches files for faster load times.
+  - The distribution domain acts as the public URL.
+
+- **Integration Workflow**
+  1. User requests the site via the CloudFront domain.
+  2. CloudFront fetches the file from the S3 bucket (origin).
+  3. CloudFront caches the file at the nearest edge location for future requests.
+
+---
