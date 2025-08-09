@@ -1,7 +1,7 @@
 Static Website Hosting with Amazon S3 and Amazon CloudFront
 
 
-![Image alt](https://github.com/Cyb3r-flip/Cloud-Learning/blob/f3ff2a09d9436738078314d792f252d0ade5972c/AWS%20Learning%20Log/Learn_Cloudfront.png)
+![CloudFront with S3](../images/Learn_Cloudfront.png)  
 
 
 This project is a simple static website hosted on **Amazon S3** and distributed globally using **Amazon CloudFront**.  
